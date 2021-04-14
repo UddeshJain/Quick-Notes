@@ -1,6 +1,6 @@
-import React from "react";
-import SimpleCard from "./card";
-import Grid from "@material-ui/core/Grid";
+import React from 'react';
+import SimpleCard from './card';
+import Grid from '@material-ui/core/Grid';
 
 const HomeComponent = ({
   data,
@@ -12,13 +12,13 @@ const HomeComponent = ({
 }) => {
   let hasPinnedItems = data && data.pinnedItems && data.pinnedItems.length > 0;
   return (
-    <div style={{ width: "90%", margin: "auto" }}>
+    <div style={{ width: '90%', margin: 'auto' }}>
       {children}
       {show && hasPinnedItems && (
         <>
           <h5>PINNED</h5>
           <Grid
-            style={{ padding: "10px 0 50px 0" }}
+            style={{ padding: '10px 0 50px 0' }}
             container
             justify="flex-start"
             justify-xs="center"
@@ -42,7 +42,7 @@ const HomeComponent = ({
       {show && hasPinnedItems && <h5>OTHERS</h5>}
       {show && (
         <Grid
-          style={{ padding: "10px 0 50px 0" }}
+          style={{ padding: '10px 0 50px 0' }}
           container
           justify="flex-start"
           justify-xs="center"
@@ -65,7 +65,7 @@ const HomeComponent = ({
       )}
       {!show && searchResults.length ? (
         <Grid
-          style={{ padding: "10px 0 50px 0" }}
+          style={{ padding: '10px 0 50px 0' }}
           container
           justify="flex-start"
           justify-xs="center"
@@ -84,7 +84,7 @@ const HomeComponent = ({
             </Grid>
           ))}
         </Grid>
-      ): null}
+      ) : null}
     </div>
   );
 };

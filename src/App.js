@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from "react";
-import { Redirect, Route, Switch, withRouter } from "react-router-dom";
-import Home from "./pages/home";
-import Signup from "./pages/signup";
-import SignIn from "./pages/signin";
-import Notes from "./pages/notes";
-import { firestore, auth } from "./firebase";
-import UpdateANote from "./pages/updateNote";
-import Spinner from "./reusable-components/spinner";
-import NotFound from "./pages/not-found";
-import NavBar from "./containers/navbar";
+import React, { useEffect, useState } from 'react';
+import { Redirect, Route, Switch, withRouter } from 'react-router-dom';
+import Home from './pages/home';
+import Signup from './pages/signup';
+import SignIn from './pages/signin';
+import Notes from './pages/notes';
+import { firestore, auth } from './firebase';
+import UpdateANote from './pages/updateNote';
+import Spinner from './reusable-components/spinner';
+import NotFound from './pages/not-found';
+import NavBar from './containers/navbar';
 
 function App({ history }) {
   const [loading, setLoading] = useState(false);
@@ -18,7 +18,7 @@ function App({ history }) {
     auth.onAuthStateChanged((user) => {
       firestore.enablePersistence().catch((err) => console.log(err));
       if (!user) {
-        history.push("/signin");
+        history.push('/signin');
         setLoading(false);
         return;
       }

@@ -1,25 +1,25 @@
-import React from "react";
-import Avatar from "@material-ui/core/Avatar";
-import Button from "@material-ui/core/Button";
-import CssBaseline from "@material-ui/core/CssBaseline";
-import TextField from "@material-ui/core/TextField";
-import CreateOutlinedIcon from "@material-ui/icons/CreateOutlined";
-import Typography from "@material-ui/core/Typography";
-import { makeStyles } from "@material-ui/core/styles";
-import Container from "@material-ui/core/Container";
-import ReactQuill from "react-quill";
-import "react-quill/dist/quill.snow.css";
-import "../../index.css";
-import Snackbar from "@material-ui/core/Snackbar";
-import MuiAlert from "@material-ui/lab/Alert";
+import React from 'react';
+import Avatar from '@material-ui/core/Avatar';
+import Button from '@material-ui/core/Button';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import TextField from '@material-ui/core/TextField';
+import CreateOutlinedIcon from '@material-ui/icons/CreateOutlined';
+import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
+import Container from '@material-ui/core/Container';
+import ReactQuill from 'react-quill';
+import 'react-quill/dist/quill.snow.css';
+import '../../index.css';
+import Snackbar from '@material-ui/core/Snackbar';
+import MuiAlert from '@material-ui/lab/Alert';
 
 const useStyles = makeStyles((theme) => ({
   paper: {
     marginTop: theme.spacing(8),
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    [theme.breakpoints.down("sm")]: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    [theme.breakpoints.down('sm')]: {
       marginTop: theme.spacing(0),
     },
   },
@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.primary.main,
   },
   form: {
-    width: "100%",
+    width: '100%',
     marginTop: theme.spacing(1),
   },
   submit: {
@@ -51,14 +51,14 @@ const TakeNoteComponent = ({
     toolbar: {
       container: [
         [{ header: [2, 3, false] }],
-        ["bold", "italic", "underline", "strike", "blockquote"],
+        ['bold', 'italic', 'underline', 'strike', 'blockquote'],
         [
-          { list: "ordered" },
-          { list: "bullet" },
-          { indent: "-1" },
-          { indent: "+1" },
+          { list: 'ordered' },
+          { list: 'bullet' },
+          { indent: '-1' },
+          { indent: '+1' },
         ],
-        ["code"],
+        ['code'],
       ],
     },
   };
