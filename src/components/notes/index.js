@@ -75,7 +75,7 @@ const TakeNoteComponent = ({
           <CreateOutlinedIcon />
         </Avatar>
         <Typography component="h1" variant="h5">
-          Take a Note
+          Create a new note
         </Typography>
         <form className={classes.form} noValidate>
           <TextField
@@ -88,7 +88,7 @@ const TakeNoteComponent = ({
             onChange={handleHeadingChange}
           />
           <ReactQuill
-            placeholder="Take a note"
+            placeholder="Write here"
             className="reactQuill"
             value={text}
             onChange={handleQuillChange}

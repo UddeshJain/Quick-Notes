@@ -35,7 +35,7 @@ function App({ history }) {
       <NavBar />
 
       <Switch>
-        <Route exact path="/takeanote">
+        <Route exact path="/new-note">
           <Notes />
         </Route>
         <Route exact path="/updateNote/:id">

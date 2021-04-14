@@ -26,12 +26,12 @@ const NavBarComponent = ({ isLoggedIn, handleSignOut }) => {
         <Toolbar className={classes.flexToolbar}>
           <Typography variant="h6">
             <Link className={classes.link} color="inherit" to="/">
-              TakeNotes
+              QuickNotes
             </Link>
           </Typography>
           {isLoggedIn && (
             <>
-              <Link to="/takeanote">
+              <Link to="/new-note">
                 <Button style={{ backgroundColor: 'white' }}>
                   <SvgIcon
                     color="secondary"
